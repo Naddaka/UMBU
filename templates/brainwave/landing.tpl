@@ -119,8 +119,9 @@
      {/if}
      <!-- Предварительное содержимое -->
      <div class="prev{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="1.35s" style="visibility: visible; animation-delay: 1.35s; animation-name:{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if}"{/if}>{$page.prev_text}</div>
+     {if $page.full_text}
      <!-- Полное содержимое -->
-     <div class="full{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay=".45s" style="visibility: visible; animation-delay: 0.45s; animation-name:{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if}"{/if}>{$page.full_text}</div>
+     <div class="full{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay=".45s" style="visibility: visible; animation-delay: 0.45s; animation-name:{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if}"{/if}>{$page.full_text}</div>{/if}
      <!-- Button «Подробнее» -->
      {if $page.field_link}
      <a href="{$page.field_link}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay=".75s"{/if} style="background-color:{echo siteinfo('siteinfo_color')}">{strip_tags($page.field_btname)}</a>

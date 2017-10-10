@@ -699,11 +699,11 @@
 		padding: 100px 10% 100px 0
 	}
 	#block-right .demi-2.col-middle {
-		padding: 100px 20% 100px 0
+		padding: 100px 20% 100px 100px
 
 	}
 	#block-right .demi-2.col-tight {
-		padding: 100px 30% 100px 0
+		padding: 100px 30% 100px 100px
 
 	}
 	.per100 { width: 100% }
