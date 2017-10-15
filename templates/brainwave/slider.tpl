@@ -32,7 +32,7 @@
                         <div class="container{if strip_tags($item.field_animation) == 'OFF'}{else:}{if strip_tags($item.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($item.field_animation)}{/if} wow{/if}"{if strip_tags($item.field_animation) == 'OFF'}{else:} data-wow-delay="0.55s"{/if}>
                             <div class="row">
                                 <div class="col-sm-8 col-sm-offset-2">
-                                    <p class="text-center mb-md20 mb-md40 mt15">{strip_tags($item.full_text)}
+                                    <p class="text-center mb-md20 mb-md40 mt15">{$item.full_text}
                                     </p>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
                         <div class="container{if strip_tags($item.field_animation) == 'OFF'}{else:}{if strip_tags($item.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($item.field_animation)}{/if} wow{/if}"{if strip_tags($item.field_animation) == 'OFF'}{else:} data-wow-delay="0.55s"{/if}>
                             <div class="row">
                                 <div class="col-sm-8 col-sm-offset-2">
-                                    <p class="text-center mb-md20 mb-md40 mt15">{strip_tags($item.full_text)}
+                                    <p class="text-center mb-md20 mb-md40 mt15">{$item.full_text}
                                     </p>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@
                     <div class="container{if strip_tags($item.field_animation) == 'OFF'}{else:}{if strip_tags($item.field_animation) == 'Default'} fadeIn{else:} {strip_tags($item.field_animation)}{/if} wow{/if}"{if strip_tags($item.field_animation) == 'OFF'}{else:} data-wow-delay="0.5s"{/if}>
                         <div class="row">
                             <div class="col-sm-8 col-sm-offset-2">
-                                <p class="text-center mb-md20 mb-md40 mt15">{strip_tags($item.full_text)}
+                                <p class="text-center mb-md20 mb-md40 mt15">{$item.full_text}
                                 </p>
                             </div>
                         </div>
@@ -182,7 +182,7 @@
                             <div class="slide-fulltext{if strip_tags($item.field_animation) == 'OFF'}{else:}{if strip_tags($item.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($item.field_animation)}{/if} wow{/if}"{if strip_tags($item.field_animation) == 'OFF'}{else:} data-wow-delay="0.75s"{/if}>
                                 <div class="row">
                                     <div class="col-sm-8 col-sm-offset-2">
-                                        <p class="text-center mb-md20 mb-md40 mt15">{strip_tags($item.full_text)}</p>
+                                        <p class="text-center mb-md20 mb-md40 mt15">{$item.full_text}</p>
                                     </div>
                                 </div>
                             </div>
