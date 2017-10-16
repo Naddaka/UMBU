@@ -435,7 +435,7 @@ p {
     font-size: 1.6rem;
     letter-spacing: .05em;
     font-weight: 400;
-    color: #333; }
+    color: #333!important; }
     .couner-item .count,
     .couner-item .count-plus {
       text-transform: uppercase;

@@ -133,7 +133,7 @@
    <!-- Стиль блока «Two columns» -->
    {if strip_tags($page.field_lanpage) == 'Two columns'} 
    <!-- Заголовок, предварительное и полное содержимое -->
- }
+ 
 
  {if strip_tags($page.field_titleoff) == ''}<span class="two-title {if strip_tags($page.field_uppercase) == ''}{else:}uppercase {/if}h2{if strip_tags($page.field_bigh) == 'Monster'} giant{/if}{if strip_tags($page.field_bigh) == 'Big'} bigh{/if}{if strip_tags($page.field_bigh) == 'Middle'} middle{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.1s"{/if} style="{if strip_tags($page.field_textcolor) == 'Black'}color: #333{/if}{if strip_tags($page.field_textcolor) == 'White'}color: #fff{/if}{if strip_tags($page.field_textcolor) == 'Gray'}color: #666{/if}{if strip_tags($page.field_textcolor) == 'Color 1'}color:{echo siteinfo('siteinfo_color')}{/if}{if strip_tags($page.field_textcolor) == 'Color 2'}color:{echo siteinfo('siteinfo_color2')}{/if}">{$page.title}</span>
  {/if}     

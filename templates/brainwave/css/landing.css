@@ -175,8 +175,7 @@
 }
 /* Стиль блока «Две колонки» */
 #two-collum {
-	background-repeat:no-repeat;
-	background-position:left top
+	background-repeat:no-repeat
 }
 #block-light .more:hover, 
 #page-standart .more:hover,
