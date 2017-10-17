@@ -427,9 +427,9 @@ p {
  -o-transition: all 0.3s ease-in-out;
  transition: all 0.3s ease-in-out;
 }
-.navigation ul li a:hover {
+/*.navigation ul li a:hover { - анимация пунктов меню линия сверху перекочевала от Богинского
   text-decoration: overline;
-}
+}*/
   .inverted {
     -webkit-filter: invert(100%); /* Safari */
     filter: invert(100%);
