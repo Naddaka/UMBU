@@ -139,9 +139,17 @@
  {/if}     
  <div{if $page.field_anchor} id="{$page.field_anchor}"{/if} class="col-sm-6">
  {$page.prev_text}
+ <!-- Button «Подробнее» 1 -->
+  {if $page.field_link}
+  <a href="{$page.field_link}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.65s"{/if}>{strip_tags($page.field_btname)}</a>
+  {/if} 
 </div>
 <div class="col-sm-6">
  {$page.full_text}
+<!-- Button «Подробнее» 2 -->
+  {if $page.field_getlink}
+  <a href="{$page.field_getlink}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.75s"{/if}>{strip_tags($page.field_gettext)}</a>
+  {/if} 
 </div>
 {/if} <!--/ Two columns -->
 
