@@ -47,6 +47,9 @@ p {
 .home-slider, .home-text-rotate {
   background: #d8d1c8;
 }
+.home-text-rotate {
+  background-size: cover!important;
+}
 .slider-block-r {
   width: 400px;
   height: auto;
