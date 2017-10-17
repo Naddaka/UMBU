@@ -139,10 +139,18 @@
  {/if}     
  <div{if $page.field_anchor} id="{$page.field_anchor}"{/if} class="col-sm-6">
  {$page.prev_text}
+ <!-- Button «Подробнее» 1 -->
+  {if $page.field_link}
+  <a href="{$page.field_link}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.65s"{/if}>{strip_tags($page.field_btname)}</a>
+  {/if} 
 </div>
 <div class="col-sm-6">
  {$page.full_text}
-</div>   
+<!-- Button «Подробнее» 2 -->
+  {if $page.field_getlink}
+  <a href="{$page.field_getlink}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.75s"{/if}>{strip_tags($page.field_gettext)}</a>
+  {/if} 
+</div>
 {/if} <!--/ Two columns -->
 
 <!-- Стиль блока «World» -->
@@ -228,16 +236,12 @@
 {/if}<!-- /Основное фото -->
 <!-- Заголовок, предварительное и полное содержимое -->
 {if strip_tags($page.field_titleoff) == ''}<div class="{if strip_tags($page.field_uppercase) == ''}{else:}uppercase {/if}h2{if strip_tags($page.field_bigh) == 'Monster'} giant{/if}{if strip_tags($page.field_bigh) == 'Big'} bigh{/if}{if strip_tags($page.field_bigh) == 'Middle'} middle{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.1s"{/if} style="{if strip_tags($page.field_textcolor) == 'Black'}color: #333{/if}{if strip_tags($page.field_textcolor) == 'White'}color: #fff{/if}{if strip_tags($page.field_textcolor) == 'Gray'}color: #666{/if}{if strip_tags($page.field_textcolor) == 'Color 1'}color:{echo siteinfo('siteinfo_color')}{/if}{if strip_tags($page.field_textcolor) == 'Color 2'}color:{echo siteinfo('siteinfo_color2')}{/if}">{$page.title}</div>
-{else:}<!--<div class="margin"></div> -->
+{else:}
 {/if}
 
 <div class="table-wrapper">
-  <div class="prev {strip_tags($page.field_hight)}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.2s"{/if}>{$page.prev_text}</div>
-</div>
-
-<div class="full">{$page.full_text}</div>
+  <div class="prev {strip_tags($page.field_hight)}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.2s"{/if}>{$page.prev_text}
 {if strip_tags($page.field_typeAccent) == 'OFF'}
-
 <!-- Button «Подробнее» -->
 <div class="text-center"> 
   {if $page.field_link}
@@ -247,7 +251,11 @@
   <a href="{$page.field_getlink}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.75s"{/if}>{strip_tags($page.field_gettext)}</a>
   {/if} 
 </div> <!-- /Button «Подробнее» -->
-{/if}
+{/if}</div>
+</div>
+
+<div class="full">{$page.full_text}</div>
+
 </div> <!-- /Стиль блока «Centered» -->
 
 <!--/ Centered -->{/if} 
