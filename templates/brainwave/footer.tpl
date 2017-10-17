@@ -12,6 +12,8 @@
         {if $page.field_vk}<a class="soc fadeInUp wow" data-wow-delay="0.2s" style="background-image:url('{$page.field_vkIcon}');" href="{$page.field_vk}" target="_blank">&nbsp;</a>{/if}
 
          {if $page.field_gp}<a class="soc fadeInUp wow" data-wow-delay="0.3s" style="background-image:url('{$page.field_gpIcon}');" href="{$page.field_gp}" target="_blank">&nbsp;</a>{/if}
+         
+         {if $page.field_youtube}<a class="soc fadeInUp wow" data-wow-delay="0.3s" style="background-image:url('{$page.field_youtubeIcon}');" href="{$page.field_youtube}" target="_blank">&nbsp;</a>{/if}
 
          {if $page.field_twitter}<a class="soc fadeInUp wow" data-wow-delay="0.4s" style="background-image:url('{$page.field_twitterIcon}');" href="{$page.field_twitter}" target="_blank">&nbsp;</a>{/if}
 
