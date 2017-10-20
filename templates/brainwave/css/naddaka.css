@@ -766,6 +766,7 @@ p {
                     .lenta-col { margin-bottom: 50px }
                     .lenta-col, .lenta-col p {
                       text-align: left;
+                      max-width: 370px;
                     }
                     .lenta-col .h3 {
                       font-size: 24px;
