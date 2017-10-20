@@ -80,6 +80,9 @@ p {
 #worldless h2 {
   letter-spacing: 0
 }
+.breadcrumb > .active {
+    color: #333;
+}
 .search-submit.btn {
   margin-top: 2px
 }
@@ -89,6 +92,9 @@ p {
   letter-spacing: .05em;
   font-weight:200;
   margin-bottom: 50px;
+}
+.breadcrumb li {
+    letter-spacing: .2em;
 }
 .logo {
   position: absolute;
@@ -292,7 +298,7 @@ p {
   margin-bottom: 14px
 }
 #showroom {
-  padding: 140px 0
+  padding: 110px 0
 }
 .portfolio-item.opacity {
   opacity: .3; }
