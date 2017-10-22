@@ -39,11 +39,11 @@
      <div class="{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="1.35s" style="visibility: visible; animation-delay: 1.35s; animation-name:{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if}"{/if}>{$page.prev_text}</div>{/if}
 
    
-     {if $page.field_link}  <!-- Button «Подробнее» -->
+     {if $page.field_link}  <!-- Button «Подробнее» 1 (1)-->
      <a href="{$page.field_link}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay=".75s"{/if} style="background-color:{echo siteinfo('siteinfo_color')}">{strip_tags($page.field_btname)}</a>
      <!--/ Button «Подробнее» -->{/if} 
      
-     {if $page.field_getlink}<!-- Button «Подробнее 2» -->
+     {if $page.field_getlink}<!-- Button «Подробнее 2» (2) -->
      <a href="{$page.field_getlink}" class="btn btn-default{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.75s"{/if} style="background-color:{echo siteinfo('siteinfo_color')}">{strip_tags($page.field_gettext)}</a>
      <!--/ Button «Подробнее 2» -->{/if}
      
@@ -60,11 +60,11 @@
         <!-- Предварительное содержимое -->
      <div class="{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="1.35s" style="visibility: visible; animation-delay: 1.35s; animation-name:{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if}"{/if}>{$page.prev_text}</div>{/if}
      
-     {if $page.field_link}<!-- Button «Подробнее» -->
+     {if $page.field_link}<!-- Button «Подробнее» 1 (3)-->
      <a href="{$page.field_link}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay=".75s"{/if} style="background-color:{echo siteinfo('siteinfo_color')}">{strip_tags($page.field_btname)}</a>
      <!--/ Button «Подробнее» -->{/if} 
      
-     {if $page.field_getlink}<!-- Button «Подробнее 2» -->
+     {if $page.field_getlink}<!-- Button «Подробнее 2» (4) -->
      <a href="{$page.field_getlink}" class="btn btn-default{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.75s"{/if} style="background-color:{echo siteinfo('siteinfo_color')}">{strip_tags($page.field_gettext)}</a>
      <!--/ Button «Подробнее 2» -->{/if}
     
@@ -122,7 +122,7 @@
      {if $page.full_text}
      <!-- Полное содержимое -->
      <div class="full{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay=".45s" style="visibility: visible; animation-delay: 0.45s; animation-name:{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if}"{/if}>{$page.full_text}</div>{/if}
-     <!-- Button «Подробнее» -->
+     <!-- Button «Подробнее» 1 (5) -->
      {if $page.field_link}
      <a href="{$page.field_link}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay=".75s"{/if} style="background-color:{echo siteinfo('siteinfo_color')}">{strip_tags($page.field_btname)}</a>
      {/if} <!--/ Button «Подробнее» -->
@@ -139,14 +139,14 @@
  {/if}     
  <div{if $page.field_anchor} id="{$page.field_anchor}"{/if} class="col-sm-6">
  {$page.prev_text}
- <!-- Button «Подробнее» 1 -->
+ <!-- Button «Подробнее» 1 (6) -->
   {if $page.field_link}
   <a href="{$page.field_link}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.65s"{/if}>{strip_tags($page.field_btname)}</a>
   {/if} 
 </div>
 <div class="col-sm-6">
  {$page.full_text}
-<!-- Button «Подробнее» 2 -->
+<!-- Button «Подробнее» 2 (7) -->
   {if $page.field_getlink}
   <a href="{$page.field_getlink}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.75s"{/if}>{strip_tags($page.field_gettext)}</a>
   {/if} 
@@ -241,8 +241,8 @@
 
 <div class="table-wrapper">
   <div class="prev {strip_tags($page.field_hight)}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.2s"{/if}>{$page.prev_text}
-{if strip_tags($page.field_typeAccent) == 'OFF'}
-<!-- Button «Подробнее» -->
+
+<!-- Button «Подробнее» (8) -->
 <div class="text-center"> 
   {if $page.field_link}
   <a href="{$page.field_link}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.65s"{/if}>{strip_tags($page.field_btname)}</a>
@@ -251,7 +251,7 @@
   <a href="{$page.field_getlink}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.75s"{/if}>{strip_tags($page.field_gettext)}</a>
   {/if} 
 </div> <!-- /Button «Подробнее» -->
-{/if}</div>
+</div>
 </div>
 
 <div class="full">{$page.full_text}</div>
@@ -306,7 +306,7 @@
  {$page.full_text}</div>
  {if strip_tags($page.field_typeAccent) == 'OFF'}
  
- {if $page.field_link}<!-- Button «Подробнее» -->
+ {if $page.field_link}<!-- Button «Подробнее» (9) -->
  <a href="{$page.field_link}" class="btn btn-default{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay=".75s"{/if} style="color:{echo siteinfo('siteinfo_color')};border-color:{echo siteinfo('siteinfo_color')}">{strip_tags($page.field_btname)}</a>
  <!-- /Button «Подробнее» -->{/if} 
  {/if}
@@ -422,15 +422,6 @@
 </article>
 <!-- /row (Blocks-акценты) -->
 {/if}
-
-{if strip_tags($page.field_typeAccent) == 'OFF'}
-{else:}
-
-{if $page.field_link}<!-- Button «Подробнее» -->
-<a href="{$page.field_link}" class="btn btn-primary{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay=".75s" style="visibility: visible; animation-delay: 0.75s; animation-name:{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if}"{/if}>{strip_tags($page.field_btname)}</a>
-{/if} 
-<!-- /Button «Подробнее» -->{/if}
-
 
 {if strip_tags($page.field_widget) == 'Non' or strip_tags($page.field_widget) == 'Feedback'}
 {else:}<!-- Виджет --> 
