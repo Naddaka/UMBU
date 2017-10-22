@@ -241,7 +241,7 @@
 
 <div class="table-wrapper">
   <div class="prev {strip_tags($page.field_hight)}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.2s"{/if}>{$page.prev_text}
-
+{if strip_tags($page.field_typeAccent) == 'OFF'}
 <!-- Button «Подробнее» (8) -->
 <div class="text-center"> 
   {if $page.field_link}
@@ -251,7 +251,11 @@
   <a href="{$page.field_getlink}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.75s"{/if}>{strip_tags($page.field_gettext)}</a>
   {/if} 
 </div> <!-- /Button «Подробнее» -->
-</div>
+{else:}
+{if $page.field_getlink}
+  <a href="{$page.field_getlink}" class="btn btn-primary{if strip_tags($page.field_textcolor) == 'White'}  btn-inverted{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="0.75s"{/if}>{strip_tags($page.field_gettext)}</a>
+  {/if} 
+{/if}</div>
 </div>
 
 <div class="full">{$page.full_text}</div>
@@ -422,6 +426,15 @@
 </article>
 <!-- /row (Blocks-акценты) -->
 {/if}
+
+{if strip_tags($page.field_typeAccent) == 'OFF'}
+{else:}
+
+{if $page.field_link}<!-- Button «Подробнее» (10) -->
+<a href="{$page.field_link}" class="btn btn-primary{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay=".75s" style="visibility: visible; animation-delay: 0.75s; animation-name:{if strip_tags($page.field_animation) == 'Default'} fadeInUp{else:} {strip_tags($page.field_animation)}{/if}"{/if}>{strip_tags($page.field_btname)}</a>
+{/if} 
+<!-- /Button «Подробнее» -->{/if}
+
 
 {if strip_tags($page.field_widget) == 'Non' or strip_tags($page.field_widget) == 'Feedback'}
 {else:}<!-- Виджет --> 
