@@ -2,7 +2,7 @@
 {foreach $pages as $page}
 {$page = $CI->load->module('cfcm')->connect_fields($page, 'page')}
 {if $page.field_video}
-<div class="page-section bg-section" data-background="{$page.field_bgimage}?v=1.0.0" data-overlay-color="#000" data-overlay-opacity="0.5">
+<div class="page-section bg-section {strip_tags($page.field_hight)} {strip_tags($page.field_bgposition)}" data-background="{$page.field_bgimage}?v=1.0.0" data-overlay-color="#000" data-overlay-opacity="0.5">
   <div class="text-center">
     <a href="{$page.field_video}" class="popup-youtube big-icon white"><div class="circle pulse"></div><i class="fa fa-play"></i></a>
     <div>
@@ -156,7 +156,7 @@
 <!-- Стиль блока «World» -->
 {if strip_tags($page.field_lanpage) == 'World'}
 <div id="worldless{if $page.field_anchor} {$page.field_anchor}{/if}" class="col-sm-12">
-  <h2 class="text-center mb-xs20 mb50">{$page.title}</h2> </div>
+  {if strip_tags($page.field_titleoff) == ''}<h2 class="text-center {if strip_tags($page.field_uppercase) == ''}{else:}uppercase {/if}mb30{if strip_tags($page.field_bigh) == 'Monster'} giant{/if}{if strip_tags($page.field_bigh) == 'Big'} bigh{/if}{if strip_tags($page.field_bigh) == 'Middle'} middle{/if}{if strip_tags($page.field_animation) == 'OFF'}{else:}{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:}{strip_tags($page.field_animation)}{/if} wow{/if}"{if strip_tags($page.field_animation) == 'OFF'}{else:} data-wow-delay="1.00s" style="visibility: visible; animation-delay: 1.00s; animation-name:{if strip_tags($page.field_animation) == 'Default'} fadeIn{else:} {strip_tags($page.field_animation)}{/if}"{/if}>{$page.title}</h2>{/if} </div>
   <div class="col-sm-12 col-md-6 text-center">
     <!-- Основное фото -->
     {if $page.field_pagephoto}
@@ -459,6 +459,9 @@
 </div>
 <!-- /row (виджет) -->{/if}
 </div> <!-- /container -->{/if}
+{if strip_tags($page.field_widget) == 'Video carousel'}
+  {widget('video-carousel')} 
+{/if} 
  {if strip_tags($page.field_widget) == 'Feedback'}
   <!-- contact_form.tpl -->
   {include_tpl('contact_form')}

@@ -236,6 +236,11 @@ p {
 #page-full {
   padding: 130px 0 100px;
 }
+#page-full td, 
+#page-full th {
+    padding: 0 5% 0 0;
+    vertical-align: text-top;
+}
 .page-header-small {
   padding: 6.455em 30px 2.455em;
 }
