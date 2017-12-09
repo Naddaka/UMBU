@@ -199,6 +199,12 @@ p {
   width: auto;
   max-height: 62px;
 }
+.pagination > li > a, .pagination > li > span {
+    width: auto;
+    border: none;
+    font-size: 2.2rem;
+    font-weight: 200!important;
+}
 .help-block {
   font-size: 1.4rem;
 }
