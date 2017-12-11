@@ -726,6 +726,9 @@
   }
   /* iPhone portail */
   @media (max-width: 480px) {
+    #contacts h1 {
+    margin: -10px 0 30px -3px;
+}
     #block-right .demi-2.col-default {
       padding: 15px 15px 35px 15px;
     }
@@ -923,7 +926,7 @@ select.lang-sel {
  padding: 70px 25px 0 25px;
 }
 .home-slider .slide .content .display-tc {
-  padding: 0;
+  /*padding: 0;*/
   letter-spacing: .01em;
 }
 .page-header-large {
@@ -936,9 +939,9 @@ select.lang-sel {
  margin-bottom: 20px;
 }
 .logo {
- width: 240px;
- top: 10px;
- margin-left: -120px;
+    width: 140px;
+    top: 10px;
+    margin-left: -70px;
 }
 .langswitch {
  font-size: 16px;
