@@ -17,7 +17,7 @@
 	
 				<div class="col-sm-4 menu-lr">
 					<!-- Логотип --> 
-    				<a class="navbar-brand" href="{site_url()}"> <img class="logo-img" src="/uploads/images/boginsky-logo-svg-01.svg" alt=""> </a>
+    				<a class="navbar-brand" href="{site_url()}"> <img class="logo-img" style="max-width: {strip_tags($item.field_logowidth)}px; margin-top: {strip_tags($item.field_logotop)}" src="{$item.field_logo}?v=1.0.0" alt="LOGO"> </a>
 				</div>
 	
 				<div class="col-sm-4 menu-r">
