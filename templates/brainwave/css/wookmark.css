@@ -2,6 +2,142 @@
   margin: 30px 0;
   position: relative;
 }
+
+
+/* Other styles */
+
+.name-filters {
+  margin-top: 40px
+}
+.name-filters .title {
+  display: inline-block;
+  float: left;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+.filters {
+  display: inline-block;
+  margin-right: -10px;
+  padding-top: 12px;
+  white-space: nowrap
+}
+.filters a {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #999;
+  font-size: 14px;
+  height: 50px;
+  padding: 0 10px;
+  line-height: 50px;
+  border: 1px solid #fff;
+  font-weight: 400;
+}
+.filters a:hover {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.filters a.active {
+  border: 1px solid #ccc;
+  color: #000;
+}
+#filter-clear:hover {
+  background-color: #3498db;
+  color: #fff;
+  border: 1px solid #fff
+}
+.smvideo {
+  margin-bottom: 15px
+}
+.smvideo iframe {
+  width: 100%;
+  height: 191px;
+}
+
+.publes a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 10px 10px 30px;
+  min-height: inherit;
+  margin: 20px 0 0 0;
+  border-bottom: 1px dashed #dfdfdf
+}
+.publes a:hover {
+  color: #000;
+  background-color: #e7eef5
+}
+.publes a.popup-youtube {
+  display: inline-block;
+  color: #fff;
+  overflow: visible;
+  font-size: 4rem;
+  line-height: 2.2em;
+  padding: 0 0 0 9px;
+  min-height: inherit;
+  margin: 0;
+  border-bottom: none;
+}
+.publes a.popup-youtube:hover {
+  background-color: transparent;
+  -webkit-filter: contrast(130%);
+    filter: contrast(130%);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+}
+.publes .mask150 {
+  margin: 15px 20px 10px -2px;
+}
+.media-video {
+  height: 225px;
+    width: 340px;
+    margin-left: 10px;
+    padding: 65px 0;
+    margin: 30px 0;
+}
+.media-video-text {
+  padding: 0 10px;
+}
+.media-video-p p {
+  color: #666;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+.date {
+    display: block;
+    font-size: 12px;
+    margin: 0 0 10px;
+    font-weight: 300;
+  color: #666;  
+}
+.publes a .h2 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #1b7cbc
+}
+.publes a:hover .h2 {
+  color: #000;
+}
+.publes h2, .publes .h2 {
+    line-height: 1;
+}
+.publes .short {
+  display: inline;
+}
+.imgbig {
+  height: 235px;
+  background-position: center;
+  background-size: cover;
+  margin: 0 0 27px 0;
+}
 /**
  * Grid container
  */

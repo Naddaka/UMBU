@@ -1,5 +1,4 @@
 <!-- Шаблон page_full.tpl -->
-
 <!-- Главный контейнер (стили блоков / настройки фона, цвета текста и другие) -->
 <div id="page-full">
 	<div class="container page-typo">
