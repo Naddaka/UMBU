@@ -4,7 +4,7 @@
 {include_tpl('header')}
 
 {if count($pages) < 4} 
-  <div class="page-section" data-background-color="#f8f8f8">
+  <div class="page-section">
 	<div class="container">
 		<div class="row">
 			{foreach $pages as $page}
@@ -28,7 +28,7 @@
 	</div>
 </div> 
 {else:}
-<div class="page-section" data-background-color="#f8f8f8">
+<div class="page-section">
 	<div class="container">
 		<div class="row">
 			<div id="columns" data-columns>
